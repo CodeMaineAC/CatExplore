@@ -116,7 +116,8 @@ namespace CatExplore
 
         public bool IsAjoined(Room room)
         {
-            return room == NorthNei || room == EastNei || room == SouthNei || room == WestNei;
+            bool ajoined = room == NorthNei || room == EastNei || room == SouthNei || room == WestNei;
+            return room != null && ajoined;
         }
 
         public void RoomStats()
